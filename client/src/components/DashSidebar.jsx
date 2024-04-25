@@ -10,7 +10,6 @@ export default function DashSidebar() {
   useEffect(() => {
     const urlParam = new URLSearchParams(location.search);
     const tabFromUrl = urlParam.get("tab");
-    console.log({ tabFromUrl });
     if (tabFromUrl) {
       setTab(tabFromUrl);
     }
@@ -25,6 +24,7 @@ export default function DashSidebar() {
               icon={HiUser}
               label={"User"}
               labelColor="dark"
+              as="div"
             >
               Profile
             </Sidebar.Item>
