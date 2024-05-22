@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import ComingSoon from "../components/ComingSoon";
 
 export default function Projects() {
   return (
-    <div>Projects</div>
-  )
+    <div className="min-h-screen">
+      <ComingSoon />
+    </div>
+  );
 }
